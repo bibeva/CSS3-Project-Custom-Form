@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3 Custom Form</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <!-- font awesome 5 cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <form action="#" class="form">
+        <h2>CSS3 Custom Form</h2>
+        <div class="row">
+          <label for="fullName">Full name</label>
+          <input id="fullName" type="text">
+        </div>
+        <div class="row">
+          <label for="emailAddress">Email address</label>
+          <input id="emailAddress" type="email">
+        </div>
+        <div class="row select">
+          <h3>Favourite Browser?</h3>
+          <div class="holder">
+            <div class="col">
+              <select>
+                <option>Google Chrome</option>
+                <option>Mozilla Firefox</option>
+                <option>Safari</option>
+                <option>Microsoft Edge</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="row radioButton1">
+          <h3>Gender</h3>
+          <div class="holder">
+            <div class="col">
+              <input id="male" type="radio" name="gender" checked>
+              <label for="male">Male</label>
+            </div>
+            <div class="col">
+              <input id="female" type="radio" name="gender">
+              <label for="female">Female</label>
+            </div>
+          </div>
+        </div>
+        <div class="row radioButton2">
+          <h3>Favourite JS framework</h3>
+          <div class="holder">
+            <div class="col">
+              <input id="react" type="radio" name="jsframework">
+              <label for="react">React</label>
+              <input id="vue" type="radio" name="jsframework" checked>
+              <label for="vue">Vue</label>
+              <input id="angular" type="radio" name="jsframework">
+              <label for="angular">Angular</label>
+            </div>
+          </div>
+        </div>
+        <div class="row radioButton3">
+          <h3>Favourite CSS framework</h3>
+          <div class="holder">
+            <div class="col">
+              <input id="bootstrap" type="radio" name="cssFramework" checked>
+              <label for="bootstrap">Bootstrap</label>
+              <input id="foundation" type="radio" name="cssFramework">
+              <label for="foundation">Foundation</label>
+              <input id="material" type="radio" name="cssFramework">
+              <label for="material">Material Design</label>
+            </div>
+          </div>
+        </div>
+        <div class="row checkbox1">
+          <h3>Which apps do you use frequently?</h3>
+          <div class="holder">
+            <div class="col">
+              <input id="whatsapp" type="checkbox" checked>
+              <label for="whatsapp">Whatsapp</label>
+            </div>
+            <div class="col">
+              <input id="instagram" type="checkbox">
+              <label for="instagram">Instagram</label>
+            </div>
+            <div class="col">
+              <input id="snapchat" type="checkbox" checked>
+              <label for="snapchat">Snapchat</label>
+            </div>
+            <div class="col">
+              <input id="tiktok" type="checkbox">
+              <label for="tiktok">Tiktok</label>
+            </div>
+          </div>
+        </div>
+        <div class="row checkbox2">
+          <h3>Sports?</h3>
+          <div class="holder">
+            <div class="col">
+              <input id="football" type="checkbox" checked>
+              <label for="football">Football</label>
+              <input id="cricket" type="checkbox">
+              <label for="cricket">Cricket</label>
+              <input id="golf" type="checkbox">
+              <label for="golf">Golf</label>
+              <input id="swimming" type="checkbox" checked>
+              <label for="swimming">Swimming</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+        <div class="row">
+          <button type="submit" class="btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

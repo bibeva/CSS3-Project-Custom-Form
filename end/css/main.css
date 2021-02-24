@@ -1,0 +1,354 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #333;
+  background: #ebf8ff;
+  font: 16px/1.6 "Roboto", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top; }
+
+@media only screen and (min-width: 1025px) {
+  a[href^=tel],
+  a[href^=skype],
+  a[href^=sms] {
+    cursor: default;
+    pointer-events: none; } }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+  color: inherit; }
+
+h1 {
+  font-size: 46px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 17px; }
+
+h6 {
+  font-size: 15px; }
+
+p {
+  margin: 0 0 15px; }
+
+a {
+  color: #3abcff;
+  text-decoration: none;
+  transition: color 0.3s ease; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #07abff; }
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 14px; } }
+
+#wrapper {
+  padding: 60px 0; }
+  @media only screen and (max-width: 640px) {
+    #wrapper {
+      padding: 15px 0; } }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 700px; }
+
+.form {
+  background: #fff;
+  padding: 50px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 640px) {
+    .form {
+      padding: 15px; } }
+  .form .row {
+    margin: 0 0 30px; }
+    .form .row > label,
+    .form .row h3 {
+      color: #3abcff;
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 0 0 5px; }
+      @media only screen and (max-width: 640px) {
+        .form .row > label,
+        .form .row h3 {
+          font-size: 14px; } }
+  .form .holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; }
+  .form .col {
+    margin: 0 10px; }
+
+input[type="text"],
+input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #a6a6a6;
+  width: 100%;
+  height: 40px;
+  font: 16px/1.6 "Roboto", sans-serif;
+  transition: border 0.3s linear; }
+  @media only screen and (max-width: 640px) {
+    input[type="text"],
+    input[type="email"] {
+      font-size: 14px; } }
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    outline: none;
+    border-bottom: 1px solid #3abcff; }
+
+.btn-primary {
+  background: #3abcff;
+  border: 0;
+  font: 600 16px/1.6 "Roboto", sans-serif;
+  cursor: pointer;
+  color: #fff;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  transition: background 0.3s linear; }
+  @media only screen and (max-width: 640px) {
+    .btn-primary {
+      font-size: 14px;
+      height: 45px; } }
+  .btn-primary:hover {
+    background: #007aba; }
+
+.select .col {
+  position: relative;
+  height: 45px;
+  width: 100%; }
+  .select .col:before {
+    content: '';
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    width: 30px;
+    background: #9fddff;
+    pointer-events: none; }
+  .select .col:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: #fff transparent transparent transparent;
+    pointer-events: none; }
+  .select .col select {
+    font: 16px/1.6 "Roboto", sans-serif;
+    background: #ebf8ff;
+    color: #333;
+    border: 1px solid #9fddff;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 45px 0 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    @media only screen and (max-width: 640px) {
+      .select .col select {
+        font-size: 14px; } }
+    .select .col select::-ms-expand {
+      display: none; }
+    .select .col select:focus {
+      outline: none; }
+
+.radioButton1 input[type="radio"] {
+  position: absolute;
+  left: -9999px; }
+  .radioButton1 input[type="radio"] + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer; }
+    .radioButton1 input[type="radio"] + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #a6a6a6;
+      border-radius: 100%;
+      background: #fff; }
+    .radioButton1 input[type="radio"] + label:after {
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      width: 10px;
+      height: 10px;
+      opacity: 0;
+      background: #3abcff;
+      border-radius: 100%;
+      transition: all 0.2s linear; }
+  .radioButton1 input[type="radio"]:checked + label:after {
+    opacity: 1; }
+
+.radioButton2 input[type="radio"] {
+  position: absolute;
+  left: -9999px; }
+  .radioButton2 input[type="radio"] + label {
+    background: #ebf8ff;
+    border: 1px solid #3abcff;
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s linear; }
+  .radioButton2 input[type="radio"]:checked + label {
+    color: #fff;
+    background: #3abcff; }
+
+.radioButton3 .col {
+  background: #ebf8ff;
+  border: 1px solid #3abcff;
+  padding: 7px; }
+.radioButton3 input[type="radio"] {
+  position: absolute;
+  left: -9999px; }
+  .radioButton3 input[type="radio"] + label {
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s linear; }
+    @media only screen and (max-width: 640px) {
+      .radioButton3 input[type="radio"] + label {
+        padding: 8px 10px; } }
+  .radioButton3 input[type="radio"]:checked + label {
+    color: #fff;
+    background: #3abcff; }
+
+.checkbox1 input[type="checkbox"] {
+  position: absolute;
+  left: -9999px; }
+  .checkbox1 input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer; }
+    .checkbox1 input[type="checkbox"] + label:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 18px;
+      height: 18px;
+      border: 1px solid #a6a6a6;
+      border-radius: 3px;
+      background: #fff; }
+    .checkbox1 input[type="checkbox"] + label:after {
+      content: '\f00c';
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      font-size: 14px;
+      line-height: 1;
+      color: #3abcff;
+      opacity: 0;
+      transform: scale(0);
+      transition: all 0.2s linear; }
+  .checkbox1 input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1); }
+
+.checkbox2 input[type="checkbox"] {
+  position: absolute;
+  left: -9999px; }
+  .checkbox2 input[type="checkbox"] + label {
+    background: #ebf8ff;
+    border: 1px solid #3abcff;
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s linear; }
+    @media only screen and (max-width: 640px) {
+      .checkbox2 input[type="checkbox"] + label {
+        padding: 8px 10px; } }
+  .checkbox2 input[type="checkbox"]:checked + label {
+    color: #fff;
+    background: #3abcff; }
+
+.switch {
+  position: relative;
+  width: 45px;
+  height: 25px; }
+  .switch input[type="checkbox"] {
+    position: absolute;
+    left: -9999px; }
+    .switch input[type="checkbox"]:checked + .slider {
+      background: #3abcff; }
+      .switch input[type="checkbox"]:checked + .slider:before {
+        transform: translateX(18px); }
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #cccccc;
+    border-radius: 35px;
+    transition: all 0.3s linear; }
+    .switch .slider:before {
+      content: '';
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      left: 4px;
+      bottom: 4px;
+      background: #fff;
+      border-radius: 50%;
+      transition: all 0.3s linear; }
+
+/*# sourceMappingURL=main.css.map */

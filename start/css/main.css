@@ -1,0 +1,121 @@
+html {
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+* {
+  max-height: 1000000px;
+  margin: 0;
+  padding: 0; }
+
+body {
+  color: #333;
+  background: #ebf8ff;
+  font: 16px/1.6 "Roboto", sans-serif;
+  min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top; }
+
+@media only screen and (min-width: 1025px) {
+  a[href^=tel],
+  a[href^=skype],
+  a[href^=sms] {
+    cursor: default;
+    pointer-events: none; } }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px;
+  color: inherit; }
+
+h1 {
+  font-size: 46px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 22px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 17px; }
+
+h6 {
+  font-size: 15px; }
+
+p {
+  margin: 0 0 15px; }
+
+a {
+  color: #3abcff;
+  text-decoration: none;
+  transition: color 0.3s ease; }
+  a:hover, a:focus {
+    text-decoration: none;
+    color: #07abff; }
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+
+@media only screen and (max-width: 640px) {
+  body {
+    font-size: 14px; } }
+
+#wrapper {
+  padding: 60px 0; }
+  @media only screen and (max-width: 640px) {
+    #wrapper {
+      padding: 15px 0; } }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 700px; }
+
+.form {
+  background: #fff;
+  padding: 50px;
+  box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1); }
+  @media only screen and (max-width: 640px) {
+    .form {
+      padding: 15px; } }
+  .form .row {
+    margin: 0 0 30px; }
+    .form .row > label,
+    .form .row h3 {
+      color: #3abcff;
+      display: block;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 0 0 5px; }
+      @media only screen and (max-width: 640px) {
+        .form .row > label,
+        .form .row h3 {
+          font-size: 14px; } }
+  .form .holder {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; }
+  .form .col {
+    margin: 0 10px; }
+
+/*# sourceMappingURL=main.css.map */

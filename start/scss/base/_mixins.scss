@@ -1,0 +1,42 @@
+// size mixin
+@mixin size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+// hide text mixin
+@mixin hide-text {
+	overflow: hidden;
+	text-indent: 101%;
+	white-space: nowrap;
+}
+
+// resizable font
+@mixin rem-font-size($pxSize) {
+	font-size: $pxSize;
+	font-size: ($pxSize / 10px) + rem;
+}
+
+// placeholder mixin
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content
+	}
+
+	&::-moz-placeholder {
+		opacity: 1;
+		@content
+	}
+
+	&:-moz-placeholder {
+		@content
+	}
+
+	&:-ms-input-placeholder {
+		@content
+	}
+
+	&.placeholder {
+		@content
+	}
+}

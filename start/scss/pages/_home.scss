@@ -1,0 +1,75 @@
+body {
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+#wrapper {
+	padding: 60px 0;
+
+	@media only screen and (max-width: 640px) {
+		padding: 15px 0;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 700px;
+}
+
+// form
+.form {
+	background: #fff;
+	padding: 50px;
+	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+
+	@media only screen and (max-width: 640px) {
+		padding: 15px;
+	}
+
+	.row {
+		margin: 0 0 30px;
+
+		>label,
+		h3 {
+			color: $primaryColor;
+			display: block;
+			font-weight: 600;
+			font-size: 16px;
+			margin: 0 0 5px;
+
+			@media only screen and (max-width: 640px) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.holder {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	.col {
+		margin: 0 10px;
+	}
+}
+
+// inputs
+
+// button
+
+// select
+
+// radio button 1
+
+// radio button 2
+
+// radio button 3
+
+// checkbox 1
+
+// checkbox 2
+
+// switch

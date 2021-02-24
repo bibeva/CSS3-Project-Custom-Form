@@ -1,0 +1,393 @@
+body {
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+}
+
+#wrapper {
+	padding: 60px 0;
+
+	@media only screen and (max-width: 640px) {
+		padding: 15px 0;
+	}
+}
+
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+	max-width: 700px;
+}
+
+// form
+.form {
+	background: #fff;
+	padding: 50px;
+	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.1);
+
+	@media only screen and (max-width: 640px) {
+		padding: 15px;
+	}
+
+	.row {
+		margin: 0 0 30px;
+
+		>label,
+		h3 {
+			color: $primaryColor;
+			display: block;
+			font-weight: 600;
+			font-size: 16px;
+			margin: 0 0 5px;
+
+			@media only screen and (max-width: 640px) {
+				font-size: 14px;
+			}
+		}
+	}
+
+	.holder {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+
+	.col {
+		margin: 0 10px;
+	}
+}
+
+// inputs
+input[type="text"],
+input[type="email"] {
+	border: 0;
+	border-bottom: 1px solid lighten($black, 45%);
+	width: 100%;
+	height: 40px;
+	font: 16px/1.6 $base-font-sans-serif;
+	transition: border 0.3s linear;
+
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+	}
+
+	&:focus {
+		outline: none;
+		border-bottom: 1px solid $primaryColor;
+	}
+}
+
+// button
+.btn-primary {
+	background: $primaryColor;
+	border: 0;
+	font: 600 16px/1.6 $base-font-sans-serif;
+	cursor: pointer;
+	color: $white;
+	padding: 10px 25px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	transition: background 0.3s linear;
+
+	@media only screen and (max-width: 640px) {
+		font-size: 14px;
+		height: 45px;
+	}
+
+	&:hover {
+		background: darken($primaryColor, 25%);
+	}
+}
+
+// select
+.select {
+	.col {
+		position: relative;
+		height: 45px;
+		width: 100%;
+
+		&:before {
+			content: '';
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			bottom: 1px;
+			width: 30px;
+			background: darken($secondaryColor, 15%);
+			pointer-events: none;
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			width: 0;
+			height: 0;
+			right: 10px;
+			bottom: 0;
+			margin: auto;
+			border-style: solid;
+			border-width: 5px 5px 0 5px;
+			border-color: $white transparent transparent transparent;
+			pointer-events: none;
+		}
+
+		select {
+			font: 16px/1.6 $base-font-sans-serif;
+			background: $secondaryColor;
+			color: $black;
+			border: 1px solid darken($secondaryColor, 15%);
+			height: 100%;
+			width: 100%;
+			cursor: pointer;
+			padding: 0 45px 0 15px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			
+			@media only screen and (max-width: 640px) {
+				font-size: 14px;
+			}
+
+			&::-ms-expand {
+				display: none;
+			}
+
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
+
+// radio button 1
+.radioButton1 {
+	input[type="radio"] {
+		position: absolute;
+		left: -9999px;
+
+		+label {
+			position: relative;
+			padding-left: 28px;
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 18px;
+				height: 18px;
+				border: 1px solid lighten($black, 45%);
+				border-radius: 100%;
+				background: $white;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 4px;
+				left: 4px;
+				width: 10px;
+				height: 10px;
+				opacity: 0;
+				background: $primaryColor;
+				border-radius: 100%;
+				transition: all 0.2s linear;
+			}
+		}
+
+		&:checked {
+			+label {
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+// radio button 2
+.radioButton2 {
+	input[type="radio"] {
+		position: absolute;
+		left: -9999px;
+
+		+label {
+			background: $secondaryColor;
+			border: 1px solid $primaryColor;
+			color: $black;
+			padding: 10px 20px;
+			display: inline-block;
+			cursor: pointer;
+			transition: all 0.3s linear;
+		}
+
+		&:checked {
+			+label {
+				color: $white;
+				background: $primaryColor;
+			}
+		}
+	}
+}
+
+// radio button 3
+.radioButton3 {
+	.col {
+		background: $secondaryColor;
+		border: 1px solid $primaryColor;
+		padding: 7px;
+	}
+
+	input[type="radio"] {
+		position: absolute;
+		left: -9999px;
+
+		+label {
+			color: $black;
+			padding: 10px 20px;
+			display: inline-block;
+			cursor: pointer;
+			transition: all 0.3s linear;
+
+			@media only screen and (max-width: 640px) {
+				padding: 8px 10px;
+			}
+		}
+
+		&:checked {
+			+label {
+				color: $white;
+				background: $primaryColor;
+			}
+		}
+	}
+}
+
+// checkbox 1
+.checkbox1 {
+	input[type="checkbox"] {
+		position: absolute;
+		left: -9999px;
+
+		+label {
+			position: relative;
+			padding-left: 28px;
+			cursor: pointer;
+
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 18px;
+				height: 18px;
+				border: 1px solid lighten($black, 45%);
+				border-radius: 3px;
+				background: $white;
+			}
+
+			&:after {
+				content: '\f00c';
+				font-family: "Font Awesome 5 Free";
+				font-weight: 900;
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				font-size: 14px;
+				line-height: 1;
+				color: $primaryColor;
+				opacity: 0;
+				transform: scale(0);
+				transition: all 0.2s linear;
+			}
+		}
+
+		&:checked {
+			+label {
+				&:after {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+
+// checkbox 2
+.checkbox2 {
+	input[type="checkbox"] {
+		position: absolute;
+		left: -9999px;
+
+		+label {
+			background: $secondaryColor;
+			border: 1px solid $primaryColor;
+			color: $black;
+			padding: 10px 20px;
+			display: inline-block;
+			cursor: pointer;
+			transition: all 0.3s linear;
+
+			@media only screen and (max-width: 640px) {
+				padding: 8px 10px;
+			}
+		}
+
+		&:checked {
+			+label {
+				color: $white;
+				background: $primaryColor;
+			}
+		}
+	}
+}
+
+// switch
+.switch {
+	position: relative;
+	width: 45px;
+	height: 25px;
+
+	input[type="checkbox"] {
+		position: absolute;
+		left: -9999px;
+
+		&:checked {
+			+.slider {
+				background: $primaryColor;
+
+				&:before {
+					transform: translateX(18px);
+				}
+			}
+		}
+	}
+
+	.slider {
+		position: absolute;
+		cursor: pointer;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: darken($white, 20%);
+		border-radius: 35px;
+		transition: all 0.3s linear;
+
+		&:before {
+			content: '';
+			position: absolute;
+			height: 18px;
+			width: 18px;
+			left: 4px;
+			bottom: 4px;
+			background: $white;
+			border-radius: 50%;
+			transition: all 0.3s linear;
+		}
+	}
+}
